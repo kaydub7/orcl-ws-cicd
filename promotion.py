@@ -29,9 +29,9 @@ def decrease(salary, amount):
 
 if __name__ == '__main__':
     DBUSER = 'hr'
-    DBPASS = 'OraPTS#2020_' 
-    DBHOST = '[DB System Public IP]'
-    DBSERV = '[PDB_service_name]'
+    DBPASS = 'WWelcome##2018' 
+    DBHOST = '168.138.38.174'
+    DBSERV = 'pdb01.sub05080509280.mwvcn.oraclevcn.com'
     conn_string = DBUSER + '/' + DBPASS + '@//' + DBHOST + '/' + DBSERV
     connection = cx_Oracle.connect(conn_string)
     run(app, host='0.0.0.0', port=8080)
