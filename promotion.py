@@ -7,6 +7,10 @@ from bottle import Bottle, run
 
 app = Bottle()
 
+@app.route('/multiply/<salary>/<amount>')
+def multiply(salary, amount):
+    return str(int(salary) * int(amount)
+
 @app.route('/conn')
 def conn():
     return str(connection.version)
