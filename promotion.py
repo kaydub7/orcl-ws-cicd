@@ -8,7 +8,6 @@ from bottle import Bottle, run
 app = Bottle()
 
 
-
 @app.route('/addition/<salary>/<amount>')
 def addition(salary, amount):
     return str(int(salary) + int(amount))
@@ -87,8 +86,8 @@ def add_commp(value):
 
 if __name__ == '__main__':
     DBUSER = 'hr'
-    DBPASS = 'WWelcome##2018'
-    DBHOST = '168.138.38.174:1521'
+    DBPASS = 'WWelcome##2018' 
+    DBHOST = '168.138.38.174'
     DBSERV = 'pdb01.sub05080509280.mwvcn.oraclevcn.com'
     conn_string = DBUSER + '/' + DBPASS + '@//' + DBHOST + '/' + DBSERV
     connection = cx_Oracle.connect(conn_string)
