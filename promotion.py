@@ -8,6 +8,7 @@ from bottle import Bottle, run
 app = Bottle()
 
 
+
 @app.route('/addition/<salary>/<amount>')
 def addition(salary, amount):
     return str(int(salary) + int(amount))
