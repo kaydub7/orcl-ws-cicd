@@ -86,11 +86,9 @@ def add_commp(value):
 
 if __name__ == '__main__':
     DBUSER = 'hr'
-    DBPASS = 'WWelcome##2018' 
-    DBHOST = '168.138.38.174'
-    DBSERV = 'pdb01.sub05080509280.mwvcn.oraclevcn.com'
-    conn_string = DBUSER + '/' + DBPASS + '@//' + DBHOST + '/' + DBSERV
+    DBPASS = 'WelCom3#2020_' 
+    DBSERV = 'pubatp_tp'
+    conn_string = DBUSER + '/' + DBPASS + '@' + DBSERV
     connection = cx_Oracle.connect(conn_string)
     run(app, host='0.0.0.0', port=8080)
     connection.close()
-
