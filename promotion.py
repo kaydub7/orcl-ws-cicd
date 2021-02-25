@@ -1,5 +1,6 @@
 """
 Simple Python application to show CI/CD capabilities.
+Second time around
 """
 
 import cx_Oracle
