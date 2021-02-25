@@ -30,7 +30,7 @@ def decrease(salary, amount):
 
 if __name__ == '__main__':
     DBUSER = 'hr'
-    DBPASS = 'WelCom3#2020_' 
+    DBPASS = 'WelCom3#2020_'
     DBHOST = '[Your Initials]-host.sub[Number].[Your Initials]vcn.oraclevcn.com'
     DBSERV = 'pdb01.sub[Number].[Your Initials]vcn.oraclevcn.com'
     conn_string = DBUSER + '/' + DBPASS + '@//' + DBHOST + '/' + DBSERV
