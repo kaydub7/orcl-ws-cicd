@@ -3,6 +3,7 @@ Simple Python application to show CI/CD capabilities.
 Second time around
 """
 
+
 from bottle import Bottle, run
 
 app = Bottle()
