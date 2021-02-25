@@ -2,6 +2,7 @@ attrs==20.3.0
 beautifulsoup4==4.9.3
 bottle==0.12.19
 coverage==5.4
+cx-Oracle==8.1.0
 flake8==3.8.4
 importlib-metadata==3.7.0
 iniconfig==1.1.1
