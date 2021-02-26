@@ -16,7 +16,7 @@ def addition(salary, amount):
 def increment(salary, percentage):
     return str(int(salary) * (1 + int(percentage)/100))
 
-
+)
 @app.route('/decrease/<salary>/<amount>')
 def decrease(salary, amount):
     return str(int(salary) - int(amount))
