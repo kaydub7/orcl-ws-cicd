@@ -46,7 +46,7 @@ def emp():
 
 
 if __name__ == '__main__':
-    DBUSER = os.getenv('DB_USER') 
+    DBUSER = os.getenv('DB_USER')
     DBPASS = os.getenv('DB_PASSWORD')
     DBHOST = os.getenv('DB_HOST')
     DBSERV = os.getenv('DB_SERVICE')
