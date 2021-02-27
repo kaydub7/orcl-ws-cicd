@@ -43,7 +43,7 @@ deploy:
     steps:
 
     # Step 1: expand environment variables in .template files and remove extension
-         - bash-template
+    - bash-template:
     # Step 2: create a directory and move .yml template files inside
     - script:
         name: prepare Kubernetes files
