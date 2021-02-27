@@ -65,7 +65,7 @@ deploy:
         insecure-skip-tls-verify: true
         command: patch deployment/orcl-ws-app -p '{"spec":{"progressDeadlineSeconds":120}}'
     # Step 5: watch the deployment. If after 120s pods are considered healthy, the step will exit 0
-        - kubectl:
+    - kubectl:
         name: check deployment status
         server: $OKE_MASTER
         token: $OKE_TOKEN
