@@ -17,7 +17,7 @@ build:
             apt-get update
             apt-get install -y alien
             apt-get install -y libaio1
-            export LD_LIBRARY_PATH=/usr/lib/oracle/21/client64/lib
+            export LD_LIBRARY_PATH=/usr/lib/oracle/21/client64/lib/
      # Step 3: run linter and tests
     - script:
         name: run tests
