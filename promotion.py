@@ -4,6 +4,7 @@ Simple Python application to show CI/CD capabilities.
 
 from bottle import Bottle, run
 import cx_Oracle
+import os
 
 app = Bottle()
 
@@ -45,10 +46,10 @@ def emp():
 
 
 if __name__ == '__main__':
-    DBUSER = 'hr'
-    DBPASS = 'WWelcome##2018'
-    DBHOST = '152.67.225.96'
-    DBSERV = 'pdb01.sub02250147130.docvcn.oraclevcn.com'
+    DBUSER = os.getenv('DB_USER')
+    DBPASS = os.getenv('DB_PASSWORD')
+    DBHOST = os.getenv('DB_HOST')
+    DBSERV = os.getenv('DB_SERVICE')
     conn_string = DBUSER + '/' + DBPASS + '@//' + DBHOST + '/' + DBSERV
     connection = cx_Oracle.connect(conn_string)
     run(app, host='0.0.0.0', port=8080)
